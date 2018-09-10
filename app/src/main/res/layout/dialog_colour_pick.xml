@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/white"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        style="@style/DialogTheme.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colour_picker_dialog_title" />
+
+    <TextView
+        style="@style/DialogTheme.Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colour_picker_dialog_message" />
+
+    <LinearLayout
+        android:id="@+id/dialog_colour_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.simplyapp.pixelskylivewallpaper.view.ToggleColourView
+            android:id="@+id/dialog_colour_1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="2"
+            android:tag="0" />
+
+        <com.simplyapp.pixelskylivewallpaper.view.ToggleColourView
+            android:id="@+id/dialog_colour_2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="2"
+            android:tag="1" />
+
+        <com.simplyapp.pixelskylivewallpaper.view.ToggleColourView
+            android:id="@+id/dialog_colour_3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="2"
+            android:tag="2" />
+
+        <com.simplyapp.pixelskylivewallpaper.view.ToggleColourView
+            android:id="@+id/dialog_colour_4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="2"
+            android:tag="3" />
+
+        <com.simplyapp.pixelskylivewallpaper.view.ToggleColourView
+            android:id="@+id/dialog_colour_5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="2"
+            android:tag="4" />
+
+    </LinearLayout>
+
+    <top.defaults.colorpicker.ColorPickerView
+        android:id="@+id/dialog_colour_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:enableAlpha="false"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:animateLayoutChanges="true"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_colour_cancel"
+            style="@style/DialogTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/dialog_colour_save"
+            style="@style/DialogTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>

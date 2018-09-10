@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pixel Sky Live Wallpaper</string>
+
+    <string name="wallpaper_fps_title">Fps:</string>
+    <string name="default_fps">\?\?</string>
+
+    <string name="colour_group_title">Colour group</string>
+    <string name="colour_blue_name">Ocean</string>
+    <string name="colour_green_name">Nature</string>
+    <string name="colour_grey_name">Grey</string>
+    <string name="colour_red_name">Sunset</string>
+    <string name="colour_purple_name">Royalty</string>
+    <string name="colour_nexus_name">Nexus</string>
+    <string name="colour_pink_name">Pink</string>
+    <string name="colour_pastel_name">Pastel</string>
+    <string name="colour_spectrum_name">Rainbow</string>
+    <string name="colour_retro_name">Retro</string>
+    <string name="colour_gold_name">Gold</string>
+    <string name="colour_dark_name">Dark</string>
+
+    <string name="colour_custom_1">Custom 1</string>
+    <string name="colour_custom_2">Custom 2</string>
+    <string name="colour_custom_3">Custom 3</string>
+    <string name="colour_custom_4">Custom 4</string>
+
+    <string name="star_count_title">Stars:</string>
+    <string name="default_stars">\?\?</string>
+
+    <string name="screen_settings">Settings</string>
+    <string name="screen_set_wallpaper">Set Wallpaper</string>
+
+
+    <string name="colour_picker_dialog_title">Color picker</string>
+    <string name="colour_picker_dialog_message">Click a colour to add, click again to clear</string>
+
+
+</resources>

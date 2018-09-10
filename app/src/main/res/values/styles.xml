@@ -1,0 +1,74 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ToggleBarButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">62dp</item>
+    </style>
+
+    <style name="CustomColorButton" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:minHeight">62dp</item>
+    </style>
+
+    <style name="TextAsWhite">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TitleText" parent="TextAsWhite">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BodyText" parent="TextAsWhite">
+    </style>
+
+    <style name="Seekbar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#dfdfdf</item>
+        <item name="android:progressTint">#ffffff</item>
+        <item name="android:thumbTint">#ffffff</item>
+    </style>
+
+    <!--dialog-->
+
+    <style name="DialogTheme">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="DialogTheme.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorDarkBackground</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="DialogTheme.Message">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="DialogTheme.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+</resources>

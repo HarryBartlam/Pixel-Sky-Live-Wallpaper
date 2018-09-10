@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/colorDarkBackground"
+    android:fillViewport="true"
+    tools:context=".ui.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.simplyapp.pixelskylivewallpaper.view.StarView
+            android:id="@+id/star_example_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp">
+
+            <TextView
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="@string/wallpaper_fps_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings_current_fps"
+                style="@style/BodyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/default_fps"
+                android:textAlignment="center" />
+
+            <SeekBar
+                android:id="@+id/settings_fps_seekbar"
+                style="@style/Seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/min_button_size"
+                android:gravity="center"
+                android:max="120"
+                tools:progress="60" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="6dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/colour_group_title"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/settings_color_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp">
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_blue"
+                style="@style/ToggleBarButton"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:tag="BLUE"
+                android:text="@string/colour_blue_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_green"
+                style="@style/ToggleBarButton"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:tag="GREEN"
+                android:text="@string/colour_green_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_purple"
+                style="@style/ToggleBarButton"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:tag="PURPLE"
+                android:text="@string/colour_purple_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_red"
+                style="@style/ToggleBarButton"
+                android:layout_column="3"
+                android:layout_row="0"
+                android:tag="RED"
+                android:text="@string/colour_red_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_grey"
+                style="@style/ToggleBarButton"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:tag="GREY"
+                android:text="@string/colour_grey_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_nexus"
+                style="@style/ToggleBarButton"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:tag="NEXUS"
+                android:text="@string/colour_nexus_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_pink"
+                style="@style/ToggleBarButton"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:tag="PINK"
+                android:text="@string/colour_pink_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_pastel"
+                style="@style/ToggleBarButton"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:tag="PASTEL"
+                android:text="@string/colour_pastel_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_spectrum"
+                style="@style/ToggleBarButton"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:tag="SPECTRUM"
+                android:text="@string/colour_spectrum_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_retro"
+                style="@style/ToggleBarButton"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:tag="RETRO"
+                android:text="@string/colour_retro_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_gold"
+                style="@style/ToggleBarButton"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:tag="GOLD"
+                android:text="@string/colour_gold_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_dark"
+                style="@style/ToggleBarButton"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:tag="DARK"
+                android:text="@string/colour_dark_name" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_custom_1"
+                style="@style/ToggleBarButton"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:tag="CUSTOM1"
+                android:text="@string/colour_custom_1" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_custom_2"
+                style="@style/ToggleBarButton"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:tag="CUSTOM2"
+                android:text="@string/colour_custom_2" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_custom_3"
+                style="@style/ToggleBarButton"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:tag="CUSTOM3"
+                android:text="@string/colour_custom_3" />
+
+            <com.simplyapp.pixelskylivewallpaper.view.SmartTogglePaletteButton
+                android:id="@+id/settings_colour_custom_4"
+                style="@style/ToggleBarButton"
+                android:layout_column="3"
+                android:layout_row="3"
+                android:tag="CUSTOM4"
+                android:text="@string/colour_custom_4" />
+
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="6dp"
+
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp">
+
+            <TextView
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="@string/star_count_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings_current_star_count"
+                style="@style/BodyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/default_stars"
+                android:textAlignment="center" />
+
+            <SeekBar
+                android:id="@+id/settings_star_count_seekbar"
+                style="@style/Seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/min_button_size"
+                android:gravity="center"
+                android:max="1250" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

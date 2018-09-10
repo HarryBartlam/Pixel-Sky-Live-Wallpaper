@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmartTogglePaletteButton">
+        <attr name="textSelectedColour" format="color" />
+        <attr name="textUnselectedColour" format="color" />
+        <attr name="textSelectedBkColour" format="color"/>
+        <attr name="textUnselectedBkColour" format="color"/>
+    </declare-styleable>
+
+</resources>

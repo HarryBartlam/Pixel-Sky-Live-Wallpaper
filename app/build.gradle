@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.simplyapp.pixelskylivewallpaper"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 6
+        versionName "1.2"
+    }
+
+    signingConfigs {
+        global {
+        }
+    }
+
+    def props = new Properties()
+
+    props.load(new FileInputStream(rootProject.file("release.properties")))
+    android.signingConfigs.global.storeFile rootProject.file(props.keyStore)
+    android.signingConfigs.global.storePassword props.keyStorePassword
+    android.signingConfigs.global.keyAlias props.keyAlias
+    android.signingConfigs.global.keyPassword props.keyAliasPassword
+
+    buildTypes {
+        debug{
+            signingConfig signingConfigs.global
+            debuggable true
+
+        }
+        release {
+            signingConfig signingConfigs.global
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.name}-${variant.versionName}-${variant.versionCode}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.github.duanhong169:colorpicker:1.1.1'
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <com.simplyapp.pixelskylivewallpaper.view.StarView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkBackground"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wallpaper_settings"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="0.5"
+            android:text="@string/screen_settings"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/wallpaper_set_wallpaper"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/min_button_size"
+            android:layout_weight="0.5"
+            android:text="@string/screen_set_wallpaper"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+</LinearLayout>
