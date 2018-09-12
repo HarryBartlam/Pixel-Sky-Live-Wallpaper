@@ -2,5 +2,5 @@
 <wallpaper
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:thumbnail="@drawable/wallpaper_thumnail"
-    android:settingsActivity="com.simplyapp.pixelskylivewallpaper.SettingsActivity"
+    android:settingsActivity="com.simplyapp.pixelskylivewallpaper.ui.SettingsActivity"
     android:description="@string/app_name" />
