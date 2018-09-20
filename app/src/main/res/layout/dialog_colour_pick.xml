@@ -89,14 +89,14 @@
             style="@style/DialogTheme.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancel" />
+            android:text="@string/colour_picker_dialog_neg" />
 
         <Button
             android:id="@+id/dialog_colour_save"
             style="@style/DialogTheme.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save" />
+            android:text="@string/colour_picker_dialog_pos" />
     </LinearLayout>
 
 </LinearLayout>

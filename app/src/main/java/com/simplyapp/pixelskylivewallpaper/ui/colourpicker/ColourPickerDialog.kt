@@ -9,7 +9,7 @@ import com.simplyapp.pixelskylivewallpaper.R
 import com.simplyapp.pixelskylivewallpaper.view.ToggleColourView
 import kotlinx.android.synthetic.main.dialog_colour_pick.*
 
-class ColourPickerDialog(context: Context,private val startingColorList: IntArray) : AppCompatDialog(context) {
+class ColourPickerDialog(context: Context, private val startingColorList: IntArray) : AppCompatDialog(context) {
 
     private var isPickingColor = false
     private var currentColorViewId: Int? = null
@@ -73,8 +73,7 @@ class ColourPickerDialog(context: Context,private val startingColorList: IntArra
     }
 
     private fun getAllColorViews(viewCallback: ((view: ToggleColourView) -> Unit)) {
-        val count = dialog_colour_layout.childCount
-        for (i in 0 until count) {
+        for (i in 0 until dialog_colour_layout.childCount) {
             viewCallback(dialog_colour_layout.getChildAt(i) as ToggleColourView)
         }
     }
