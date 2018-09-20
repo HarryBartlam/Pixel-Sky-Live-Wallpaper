@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#777"
     android:orientation="vertical"
-    tools:context=".SettingsActivity">
+    tools:context="ui.SettingsActivity">
 
     <com.simplyapp.pixelskylivewallpaper.view.StarView
         android:layout_width="match_parent"
