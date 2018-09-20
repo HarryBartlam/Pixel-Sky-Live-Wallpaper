@@ -30,9 +30,10 @@
     <string name="screen_settings">Settings</string>
     <string name="screen_set_wallpaper">Set Wallpaper</string>
 
-
     <string name="colour_picker_dialog_title">Color picker</string>
     <string name="colour_picker_dialog_message">Click a colour to add, click again to clear</string>
 
+    <string name="colour_picker_dialog_pos">Save</string>
+    <string name="colour_picker_dialog_neg">Cancel</string>
 
 </resources>
